@@ -4,12 +4,22 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.example</groupId>
+        <groupId>com.food.ordering.system</groupId>
         <artifactId>OutboxPattern</artifactId>
         <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>order-service</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>order-application</module>
+        <module>order-container</module>
+        <module>order-dataaccess</module>
+        <module>order-domain</module>
+        <module>order-messaging</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
