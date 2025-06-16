@@ -23,7 +23,6 @@
         <module name="restaurant-dataaccess" />
         <module name="payment-container" />
         <module name="order-application" />
-        <module name="common-dataaccess" />
         <module name="restaurant-messaging" />
       </profile>
       <profile name="Annotation profile for OutboxPattern" enabled="true">
@@ -46,6 +45,15 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
         </processorPath>
         <module name="common-application" />
+      </profile>
+      <profile name="Annotation profile for common-dataaccess" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
+        </processorPath>
+        <module name="common-dataaccess" />
       </profile>
     </annotationProcessing>
   </component>
